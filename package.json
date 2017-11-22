@@ -1,0 +1,23 @@
+{
+  "name": "devops-hw4",
+  "version": "1.0.0",
+  "description": "DevOps HW4",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ncsu.edu/akshetty/devops-hw4"
+  },
+  "keywords": [
+    "devops",
+    "hw4"
+  ],
+  "author": "AtitShetty",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "4.12.3",
+    "random-js": "^1.0.8"
+  }
+}
