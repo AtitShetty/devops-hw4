@@ -15,3 +15,4 @@ When we run ```node main.js```, it will hit the gateway 100 times and log the st
 
 If we run ```node analysis.js```, the utility will check ```report.csv``` and try to find it the response from experimental cluster is as expected. If yes then it will post status ```Can handle gracefully.```, else it will post ```Cannot handle gracefully.```.
 
+## [Report](./Reports/Report.pdf)
