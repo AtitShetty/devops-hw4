@@ -52,7 +52,6 @@ app.get('/api-control', function(req, res) {
 
   request('http://localhost:4000/ratings', function(error, response, body) {
 
-
     if (error) {
       res.status(500).send("Internal server error");
       return;
@@ -64,8 +63,6 @@ app.get('/api-control', function(req, res) {
 
 app.get('/api-exp', function(req, res) {
   request('http://localhost:5000/ratings', function(error, response, body) {
-
-
     if (error) {
       res.status(500).send("Internal server error");
       return;
@@ -91,9 +88,6 @@ app.get('/start-ratings', function(req, res) {
   res.send('started server');
 });
 
-
-
-
 var app_server = app.listen(3000);
 
 var rating_server = rating.listen(4000);
@@ -110,6 +104,10 @@ function testMyApi() {
       }
       if (response && response.request.path == "/api-control") {
         fs.appendFileSync("report.csv", "/api-control," + response.statusCode + ",200\n");
+      }
+
+      if (response && response.request.path == "/api") {
+        fs.appendFileSync("report.csv", "/api," + response.statusCode + ",200\n");
       }
 
     });
