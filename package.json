@@ -19,5 +19,9 @@
   "devDependencies": {
     "express": "4.12.3",
     "random-js": "^1.0.8"
+  },
+  "dependencies": {
+    "express-queue": "0.0.8",
+    "request": "^2.83.0"
   }
 }
